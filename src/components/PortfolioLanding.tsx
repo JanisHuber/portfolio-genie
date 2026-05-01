@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Sparkles, Upload, Share2, LayoutTemplate, Smartphone, ArrowRight, Check } from "lucide-react";
 
@@ -57,8 +58,8 @@ const PortfolioLanding = () => {
               Jetzt kostenlos starten
               <ArrowRight className="ml-1 w-4 h-4" />
             </Button>
-            <Button size="lg" variant="ghost" className="rounded-full h-12 px-8 text-foreground hover:bg-secondary">
-              Beispiele ansehen
+            <Button asChild size="lg" variant="ghost" className="rounded-full h-12 px-8 text-foreground hover:bg-secondary">
+              <Link to="/beispiele">Beispiele ansehen</Link>
             </Button>
           </div>
 
